@@ -13,7 +13,7 @@ import json
 digits += "."
 
 out_json = "cheapest.js"
-url = "https://smile.amazon.com/dp/B003EM8008/"
+url = "https://www.amazon.com/dp/B003EM8008/"
 request = requests.post(url)
 soup = BeautifulSoup(request.text, "html.parser")
 raw_colors = soup.select("#twister .swatchAvailable, .swatchSelect)")
@@ -25,7 +25,7 @@ for raw_color in raw_colors:
 	price_text = raw_color.select(".a-size-mini")[0].text
 	price = float("".join([character for character in price_text if character in digits]))
 	price_by_color[color_name] = price
-	link_by_color[color_name] = "https://www.amazon.com/" + raw_color.select(".a-list-item a")[0]["href"]
+	link_by_color[color_name] = "https://smile.amazon.com/" + raw_color.select(".a-list-item a")[0]["href"]
 
 lowest = min(price_by_color.items(), key = operator.itemgetter(1))
 with open(out_json, "w") as file:
