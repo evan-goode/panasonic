@@ -13,7 +13,7 @@ import json
 digits += "."
 
 out_json = "cheapest.js"
-url = "https://www.amazon.com/dp/B003EM8008/"
+url = "https://smile.amazon.com/dp/B003EM8008/"
 request = requests.post(url)
 soup = BeautifulSoup(request.text, "html.parser")
 raw_colors = soup.select("#twister .swatchAvailable, .swatchSelect)")
