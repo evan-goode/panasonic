@@ -1,1 +1,0 @@
-const cheapest = {"color": "red", "price": "$7.98", "link": "https://www.amazon.com//dp/B003ELYQJI/ref=twister_B0055AVO4Q?_encoding=UTF8&psc=1"};
