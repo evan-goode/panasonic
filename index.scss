@@ -1,0 +1,59 @@
+// imports
+@import "reset";
+
+html, body {
+	min-height: 100vh;
+}
+body {
+	font-family: "Helvetica", "Arial", sans-serif;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.container {
+	padding: 2rem;
+}
+a {
+	color: inherit;
+}
+h1, h2, h3 {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+h1 {
+	font-size: 8rem;
+	margin-bottom: 2rem;
+}
+h2 {
+	font-size: 4rem;
+	margin-bottom: 2rem;
+}
+h3 {
+	font-size: 3rem;
+}
+.black {
+	color: black;
+}
+.blue {
+	color: dodgerblue;
+}
+.green {
+	color: green;
+}
+.orange {
+	color: orange;
+}
+.pink {
+	color: lighten(fuchsia, 25%);
+}
+.red {
+	color: red;
+}
+.silver {
+	color: gray;
+	-webkit-text-fill-color: white; // will override color
+	-webkit-text-stroke-width: 0.2rem;
+	-webkit-text-stroke-color: black;
+}
