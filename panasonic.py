@@ -40,7 +40,7 @@ for raw_color in raw_colors:
 	price_text = raw_color.select(".a-size-mini")[0].text
 	price = float("".join([character for character in price_text if character in digits]))
 	price_by_color[color_name] = price
-	link_by_color[color_name] = "https://smile.amazon.com/" + raw_color.select(".a-list-item a")[0]["href"]
+	link_by_color[color_name] = "https://smile.amazon.com" + raw_color.select(".a-list-item a")[0]["href"]
 
 lowest = min(price_by_color.items(), key = operator.itemgetter(1))
 string = "const cheapest = " + json.dumps({
