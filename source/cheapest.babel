@@ -1,0 +1,13 @@
+async function load() {
+	const response = await fetch("cheapest.json");
+	const cheapest = await response.json();
+	console.log(cheapest);
+	document.querySelector(".color").textContent = cheapest.color;
+	document.querySelector(".color").classList.add(cheapest.color);
+	document.querySelector(".price").textContent = cheapest.price_text;
+	for (const element of document.querySelectorAll(".link")) {
+		element.href = cheapest.link;
+	}
+}
+
+load();

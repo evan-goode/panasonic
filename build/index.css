@@ -45,11 +45,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-@media print {
-  html, body {
-    min-height: unset !important;
-    height: auto !important; } }
-
 @media (max-width: 640px) {
   html {
     font-size: 10px; } }

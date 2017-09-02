@@ -1,6 +1,0 @@
-document.querySelector(".color").textContent = cheapest.color;
-document.querySelector(".color").classList.add(cheapest.color);
-document.querySelector(".price").textContent = cheapest.price;
-for (const element of document.querySelectorAll(".link")) {
-	element.href = cheapest.link;
-}
